@@ -1,0 +1,20 @@
+name: Publish
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish
+        run: npm install && npx jsr publish

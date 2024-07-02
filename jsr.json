@@ -1,0 +1,5 @@
+{
+  "name": "@stepbrobd/figure",
+  "version": "2024.702.1",
+  "exports": "./index.mjs"
+}
