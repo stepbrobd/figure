@@ -16,5 +16,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup
+        uses: denoland/setup-deno@v1
+
       - name: Publish
-        run: npm install && npx jsr publish
+        run: deno publish
